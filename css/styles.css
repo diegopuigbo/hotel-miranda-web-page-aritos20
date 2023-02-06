@@ -17,7 +17,7 @@
 }
 .header__h {
   padding: 11px 13px;
-  font-family: "Archivo";
+  font-family: var(--font-archivo);
   font-weight: 700;
   font-size: 18px;
 }
@@ -27,12 +27,12 @@
   margin-left: 13px;
 }
 .header__name li:nth-child(1) {
-  font-family: "Archivo";
+  font-family: var(--font-archivo);
   font-weight: 700;
   font-size: 14px;
 }
 .header__name li:nth-child(2) {
-  font-family: "Archivo";
+  font-family: var(--font-archivo);
   font-weight: 400;
   font-size: 14px;
 }
@@ -46,51 +46,121 @@
 }
 .principal h4 {
   width: 63%;
-  font-family: "Archivo";
+  font-family: var(--font-archivo);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2.8px;
   color: var(--white-text);
   padding-top: 75px;
   margin-bottom: 40px;
-  margin-left: 20px;
+  margin-left: 5%;
 }
 .principal h1 {
   width: 90%;
-  font-family: "Old Standard TT";
+  font-family: var(--old-standard);
   font-weight: 400;
   font-size: 56px;
   letter-spacing: -1.2px;
   color: var(--white-text);
-  margin-left: 20px;
+  margin-left: 5%;
   margin-bottom: 40px;
 }
 .principal__button--gold {
   display: block;
   width: 217px;
   height: 60px;
-  background-color: var(--gold-button);
-  font-family: "Archivo";
+  background-color: var(--gold);
+  font-family: var(--font-archivo);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 2.8px;
   color: var(--white-text);
   border: none;
   margin-bottom: 24px;
-  margin-left: 20px;
+  margin-left: 5%;
 }
 .principal__button--black {
   display: block;
   width: 217px;
   height: 60px;
   background-color: var(--principal-background);
-  font-family: "Archivo";
+  font-family: var(--font-archivo);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 2.8px;
   color: var(--white-text);
   border: 2px solid rgba(255, 255, 255, 0.33);
-  margin-left: 20px;
+  margin-left: 5%;
+}
+
+.check-in {
+  background-color: var(--secondary-background);
+  padding-bottom: 36px;
+}
+.check-in__arrival {
+  display: block;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white-text);
+  margin-left: 5%;
+  margin-bottom: 24px;
+  padding-top: 36px;
+}
+.check-in__departure {
+  display: block;
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white-text);
+  margin-left: 5%;
+  margin-bottom: 24px;
+}
+.check-in__input-arrival {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 89%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--gold);
+  background-color: var(--secondary-background);
+  color: #686868;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  font-size: 14px;
+  gap: 10px;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+.check-in__input-departure {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 89%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--gold);
+  background-color: var(--secondary-background);
+  color: #686868;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  font-size: 14px;
+  gap: 10px;
+  margin-left: 5%;
+  margin-bottom: 42px;
+}
+.check-in button {
+  display: block;
+  width: 217px;
+  height: 60px;
+  background-color: var(--gold);
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  border: none;
+  width: 250px;
+  margin-left: 5%;
 }
 
 html, * {
@@ -106,7 +176,11 @@ body {
 :root {
   --principal-background: #333333;
   --white-text: #ffffff;
-  --gold-button: #BEAD8E;
+  --gold: #BEAD8E;
+  --secondary-background: #222222;
+  --font-archivo: "Archivo";
+  --font-old-standard: "Old Standard TT";
+  --font-roboto: "Roboto";
 }
 
 /*# sourceMappingURL=styles.css.map */

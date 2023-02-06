@@ -20,7 +20,7 @@
 
     &__h {
         padding: 11px 13px;
-        font-family: 'Archivo';
+        font-family: var(--font-archivo);
         font-weight: 700;
         font-size: 18px;
     }
@@ -31,13 +31,13 @@
         margin-left: 13px;
 
         li:nth-child(1) {
-            font-family: 'Archivo';
+            font-family: var(--font-archivo);
             font-weight: 700;
             font-size: 14px;
         }
         
         li:nth-child(2) {
-            font-family: 'Archivo';
+            font-family: var(--font-archivo);
             font-weight: 400;
             font-size: 14px;
         }

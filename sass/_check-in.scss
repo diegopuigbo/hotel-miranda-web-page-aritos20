@@ -1,0 +1,59 @@
+@use 'principal';
+
+@mixin label-style() {
+    display: block;
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white-text);
+    margin-left: 5%;
+    margin-bottom: 24px;
+}
+
+@mixin input-style {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 89%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--gold);
+    background-color: var(--secondary-background);
+    color: #686868;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 14px;
+    gap: 10px;
+    margin-left: 5%;
+}
+
+.check-in {
+    background-color: var(--secondary-background);
+    padding-bottom: 36px;
+
+    &__arrival {
+        @include label-style();
+        padding-top: 36px;
+    }
+
+    &__departure {
+        @include label-style();
+        
+    }
+
+    &__input-arrival {
+        @include input-style();
+        margin-bottom: 30px;
+    }
+
+    &__input-departure {
+        @include input-style();
+        margin-bottom: 42px;
+    }
+
+    button {
+        @include principal.button-style(var(--gold));
+        border: none;
+        width: 250px;
+        margin-left: 5%;
+    }
+}
