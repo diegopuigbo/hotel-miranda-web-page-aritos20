@@ -40,6 +40,59 @@
   margin-left: 28px;
 }
 
+.principal {
+  background-color: var(--principal-background);
+  padding-bottom: 75px;
+}
+.principal h4 {
+  width: 63%;
+  font-family: "Archivo";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  padding-top: 75px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.principal h1 {
+  width: 90%;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: -1.2px;
+  color: var(--white-text);
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.principal__button--gold {
+  display: block;
+  width: 217px;
+  height: 60px;
+  background-color: var(--gold-button);
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  border: none;
+  margin-bottom: 24px;
+  margin-left: 20px;
+}
+.principal__button--black {
+  display: block;
+  width: 217px;
+  height: 60px;
+  background-color: var(--principal-background);
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  margin-left: 20px;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
@@ -48,6 +101,12 @@ html, * {
 
 body {
   min-width: 320px;
+}
+
+:root {
+  --principal-background: #333333;
+  --white-text: #ffffff;
+  --gold-button: #BEAD8E;
 }
 
 /*# sourceMappingURL=styles.css.map */
