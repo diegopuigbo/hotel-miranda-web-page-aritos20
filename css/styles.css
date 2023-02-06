@@ -75,6 +75,7 @@
   font-size: 14px;
   letter-spacing: 2.8px;
   color: var(--white-text);
+  cursor: pointer;
   border: none;
   margin-bottom: 24px;
   margin-left: 5%;
@@ -89,6 +90,7 @@
   font-size: 14px;
   letter-spacing: 2.8px;
   color: var(--white-text);
+  cursor: pointer;
   border: 2px solid rgba(255, 255, 255, 0.33);
   margin-left: 5%;
 }
@@ -158,9 +160,83 @@
   font-size: 14px;
   letter-spacing: 2.8px;
   color: var(--white-text);
+  cursor: pointer;
   border: none;
   width: 250px;
   margin-left: 5%;
+}
+
+.about-us {
+  margin-top: 60px;
+}
+.about-us h6 {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  color: var(--sections-color-letter);
+  padding-top: 38px;
+  margin-left: 5%;
+  margin-bottom: 32px;
+}
+.about-us h2 {
+  width: 90%;
+  font-family: var(--font-old-standard);
+  font-weight: 400;
+  font-size: 56px;
+  margin-bottom: 16px;
+  color: var(--color-titles);
+  margin: 0 auto;
+}
+.about-us p {
+  width: 90%;
+  font-family: var(--font-archivo);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--sections-color-letter);
+  line-height: 24px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.about-us button {
+  display: block;
+  width: 217px;
+  height: 60px;
+  background-color: var(--gold);
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  cursor: pointer;
+  border: none;
+  margin-left: 5%;
+  margin-bottom: 60px;
+}
+.about-us__strong-team-img {
+  width: 270px;
+  height: 300px;
+  background-color: #E4E4E4;
+  margin: 0 auto;
+}
+.about-us__strong-team {
+  width: 72%;
+  margin: 0 auto;
+}
+.about-us__strong-team h4 {
+  font-family: var(--font-old-standard);
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.about-us__strong-team p {
+  font-family: var(--fon-roboto);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: var(--color-titles);
 }
 
 html, * {
@@ -178,6 +254,8 @@ body {
   --white-text: #ffffff;
   --gold: #BEAD8E;
   --secondary-background: #222222;
+  --sections-color-letter: #777777;
+  --color-titles: #111;
   --font-archivo: "Archivo";
   --font-old-standard: "Old Standard TT";
   --font-roboto: "Roboto";
