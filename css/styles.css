@@ -426,6 +426,68 @@
   margin-left: 5%;
 }
 
+.facilities h6 {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--sections-color-letter);
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+.facilities h2 {
+  font-family: var(--font-old-standard);
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  color: var(--secondary-background);
+  text-align: center;
+}
+.facilities__img-number {
+  width: 81%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.facilities__img-number img {
+  object-fit: contain;
+  align-self: flex-end;
+}
+.facilities__number-01 {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 120px;
+  color: rgba(34, 34, 34, 0.04);
+}
+.facilities__title-1 {
+  font-family: var(--font-old-standard);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  color: var(--secondary-background);
+  margin-bottom: 28px;
+  margin-top: 37px;
+  margin-left: 9%;
+}
+.facilities__text-1 {
+  width: 67%;
+  font-family: var(--font-archivo);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--sections-color-letter);
+  margin-left: 9%;
+}
+
+.food-menu {
+  margin-top: 60px;
+}
+.food-menu__donut-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
