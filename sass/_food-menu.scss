@@ -5,4 +5,58 @@
         display: flex;
         justify-content: flex-end;
     }
+
+    h6 {
+        font-family: var(--font-archivo);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: var(--sections-color-letter);
+        margin-bottom: 24px;
+        margin-left: 5%;
+    }
+
+    h2 {
+        font-family: var(--font-old-standard);
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        color: var(--secondary-background);
+        margin-left: 5%;
+        margin-bottom: 32px;
+    }
+
+    &__container-food {
+        width: 91%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 16px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__text-food {
+        h5 {
+           font-family: var(--font-old-standard); 
+           font-weight: 400;
+           font-size: 24px;
+           letter-spacing: -0.72px;
+           color: var(--secondary-background);
+           margin-bottom: 12px;
+        }
+
+        p {
+            font-family: var(--font-roboto);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: var(--secondary-background);
+        }
+    }
 }
