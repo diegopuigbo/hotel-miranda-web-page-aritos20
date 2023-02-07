@@ -1,7 +1,12 @@
 .header {
+  width: 100%;
+  position: fixed;
   height: 70px;
+  background-color: var(--white-text);
   display: flex;
+  align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 .header nav {
   cursor: pointer;
@@ -9,6 +14,7 @@
 .header__container {
   width: 90%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .header__logo {
@@ -51,7 +57,7 @@
   font-weight: 700;
   letter-spacing: 2.8px;
   color: var(--white-text);
-  padding-top: 75px;
+  padding-top: 145px;
   margin-bottom: 40px;
   margin-left: 5%;
 }
@@ -180,15 +186,16 @@
   margin-bottom: 32px;
 }
 .about-us h2 {
-  width: 90%;
+  width: 95%;
   font-family: var(--font-old-standard);
   font-weight: 400;
   font-size: 56px;
   margin-bottom: 16px;
   color: var(--color-titles);
-  margin: 0 auto;
+  overflow-wrap: break-word;
+  margin-left: 5%;
 }
-.about-us p:nth-child(1) {
+.about-us__principal-description {
   width: 90%;
   font-family: var(--font-archivo);
   font-weight: 400;
@@ -214,9 +221,8 @@
   margin-bottom: 60px;
 }
 .about-us__strong-team-img {
-  width: 270px;
-  height: 300px;
-  background-color: #E4E4E4;
+  object-fit: cover;
+  display: block;
   margin: 0 auto;
 }
 .about-us__card-title--black {
@@ -277,21 +283,41 @@
   z-index: -10;
 }
 .about-us__luxury-img {
-  width: 270px;
-  height: 300px;
-  background-color: #E4E4E4;
+  object-fit: cover;
+  display: block;
   margin: 0 auto;
 }
 .about-us__luxury-room {
   width: 270px;
   background-color: var(--secondary-background);
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 .about-us__luxury-room img {
   display: block;
   margin: 0 auto;
   margin-bottom: 29px;
   padding-top: 54px;
+}
+
+.rooms h6 {
+  text-align: center;
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--sections-color-letter);
+  margin-bottom: 24px;
+}
+.rooms h2 {
+  text-align: center;
+  font-family: var(--font-old-standard);
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: var(--secondary-background);
+  margin-bottom: 24px;
 }
 
 html, * {

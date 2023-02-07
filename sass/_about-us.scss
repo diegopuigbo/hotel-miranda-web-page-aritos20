@@ -35,16 +35,17 @@
     }
     
     h2 {
-        width: 90%;
+        width: 95%;
         font-family: var(--font-old-standard);
         font-weight: 400;
         font-size: 56px;
         margin-bottom: 16px;
         color: var(--color-titles);
-        margin: 0 auto;
+        overflow-wrap: break-word;
+        margin-left: 5%;
     }
 
-    p:nth-child(1) {
+    &__principal-description {
         width: 90%;
         font-family: var(--font-archivo);
         font-weight: 400;
@@ -63,9 +64,8 @@
     }
 
     &__strong-team-img {
-        width: 270px;
-        height: 300px;
-        background-color: #E4E4E4;
+        object-fit: cover;
+        display: block;
         margin: 0 auto;
     }
 
@@ -110,9 +110,8 @@
     }
 
     &__luxury-img {
-        width: 270px;
-        height: 300px;
-        background-color: #E4E4E4;
+        object-fit: cover;
+        display: block;
         margin: 0 auto;
     }
 
@@ -120,6 +119,7 @@
         width: 270px;
         background-color: var(--secondary-background);
         margin: 0 auto;
+        margin-bottom: 60px;
         
         img {
             display: block;

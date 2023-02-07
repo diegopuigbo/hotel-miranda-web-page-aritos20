@@ -1,7 +1,12 @@
 .header {
+    width: 100%;
+    position: fixed;
     height: 70px;
+    background-color: var(--white-text);
     display: flex;
+    align-items: center;
     justify-content: center;
+    z-index: 10;
 
     nav {
         cursor: pointer;
@@ -10,6 +15,7 @@
     &__container {
         width: 90%;
         display: flex;
+        justify-content: center;
         align-items: center;
     }
 
