@@ -319,6 +319,49 @@
   color: var(--secondary-background);
   margin-bottom: 24px;
 }
+.rooms__services {
+  margin: 0 auto;
+  height: 40px;
+  width: 68%;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rooms__description-price {
+  width: 90%;
+  margin: 0 auto;
+}
+.rooms__description-price h4 {
+  padding-top: 19px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: var(--font-old-standard);
+  font-size: 28px;
+  letter-spacing: -1.2px;
+  font-weight: 400;
+  color: var(--secondary-background);
+}
+.rooms__description-price p:nth-child(2) {
+  text-align: center;
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--sections-color-letter);
+  margin-bottom: 12px;
+}
+.rooms__description-price p:nth-child(3) {
+  text-align: center;
+  font-family: var(--font-archivo);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold);
+  padding-bottom: 19px;
+}
+.rooms__description-price p:nth-child(3) span {
+  font-size: 13px;
+}
 
 html, * {
   box-sizing: border-box;
