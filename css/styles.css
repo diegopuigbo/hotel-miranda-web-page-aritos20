@@ -887,6 +887,123 @@
   filter: brightness(2);
 }
 
+.about-us-restaurant img {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  margin-bottom: 32px;
+  margin-top: 71px;
+}
+.about-us-restaurant h6 {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--sections-color-letter);
+  margin-left: 10%;
+  margin-bottom: 26px;
+}
+.about-us-restaurant h2 {
+  font-family: var(--font-old-standard);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -1.05px;
+  color: var(--secondary-background);
+  margin-left: 10%;
+}
+.about-us-restaurant p {
+  width: 78%;
+  margin: 0 auto;
+  font-family: var(--font-archivo);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--sections-color-letter);
+  margin-bottom: 16px;
+}
+.about-us-restaurant button {
+  display: block;
+  width: 217px;
+  height: 60px;
+  background-color: var(--gold);
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  cursor: pointer;
+  border: none;
+  margin-left: 10%;
+  margin-bottom: 80px;
+}
+
+.about-us-facilities {
+  background-color: var(--secondary-background);
+  padding-bottom: 73px;
+}
+.about-us-facilities h6 {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  padding-top: 48px;
+}
+.about-us-facilities h2 {
+  font-family: var(--font-old-standard);
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  color: var(--white-text);
+  text-align: center;
+  margin-bottom: 32px;
+}
+.about-us-facilities__container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #292929;
+}
+.about-us-facilities__img-number {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.about-us-facilities__img-number img {
+  object-fit: contain;
+  align-self: flex-end;
+}
+.about-us-facilities__number-01 {
+  font-family: var(--font-archivo);
+  font-size: 120px;
+  font-weight: 700;
+  color: var(--secondary-background);
+}
+.about-us-facilities__title-1 {
+  font-family: var(--font-old-standard);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  color: var(--white-text);
+  margin-bottom: 28px;
+  margin-top: 37px;
+  margin-left: 4%;
+}
+.about-us-facilities__text-1 {
+  width: 74%;
+  font-family: var(--font-archivo);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--white-text);
+  margin-left: 4%;
+  padding-bottom: 51px;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
