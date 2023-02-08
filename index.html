@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -17,9 +17,16 @@
 </head>
 <body>
     <header class="header">
+        <ul class="header__dropdown-menu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="">Rooms</a></li>
+            <li><a href="">Offers</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
         <div class="header__container">
             <nav>
-                <img src="assets/burger-menu.png" alt="a burger menu" />
+                <img class="header__burger-menu" src="assets/home/burger-menu.png" alt="a burger menu" />
+                <img class="header__x-menu" src="assets/home/x-menu.png" alt="a close menu" width="20"/>
             </nav>
             <div class="header__logo">
                 <p class="header__h">H</p>
@@ -29,8 +36,8 @@
                 <li>MIRANDA</li>
             </ul>
             <div class="header__account-search">
-                <img src="assets/your-account.png" alt="a human shape to go to your account" />
-                <img src="assets/search.png" alt="a magnifiying glass to search" />
+                <img class="header__img-account" src="assets/home/your-account.png" alt="a human shape to go to your account" />
+                <img class="header__lupa" src="assets/home/search.png" alt="a magnifiying glass to search" />
             </div>
         </div>
     </header>
@@ -51,45 +58,44 @@
             <button>CHECK AVAILABILITY</button>
         </section>
         
-        <section class="about-us">
+        <section class="discover">
             <h6>ABOUT US</h6>
             <h2>Discover Our Underground.</h2>
-            <p class="about-us__principal-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="discover__principal-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <button>BOOK NOW</button>
-            <img class="about-us__strong-team-img" src="assets/strong-team.jpg" alt="a luxury pool of the hotel" width="270" height="300">
-            <div class="about-us__strong-team">
-                <img src="assets/strong-team-background.png" alt="shape background">
-                <img src="assets/strong-team.png" alt="personal of the Hotel" />
-                <h4 class="about-us__card-title--black">Strong Team</h4>
-                <p class="about-us__card-description--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <img class="discover__strong-team-img" src="assets/home/strong-team.jpg" alt="a luxury pool of the hotel" width="270" height="300">
+            <div class="discover__strong-team">
+                <img src="assets/home/strong-team-background.png" alt="shape background">
+                <img src="assets/home/strong-team.png" alt="personal of the Hotel" />
+                <h4 class="discover__card-title--black">Strong Team</h4>
+                <p class="discover__card-description--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             </div>
-            <img class="about-us__luxury-img" src="assets/luxury-room.jpg" alt="a luxury room of the hotel" width="270" height="300">
-            <div class="about-us__luxury-room">
-                <img src="assets/calendar-about-us.png" alt="a calendar" />
-                <h4 class="about-us__card-title--white">Luxury Room</h4>
-                <p class="about-us__card-description--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <img class="discover__luxury-img" src="assets/home/luxury-room.jpg" alt="a luxury room of the hotel" width="270" height="300">
+            <div class="discover__luxury-room">
+                <img src="assets/home/calendar-about-us.png" alt="a calendar" />
+                <h4 class="discover__card-title--white">Luxury Room</h4>
+                <p class="discover__card-description--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             </div>
         </section>
 
         <section class="rooms">
             <h6>ROOMS</h6>
             <h2>Hand Picked Rooms</h2>
-            <!-- Slider main container -->
             <div class="swiper rooms__swiper">
-                <!-- Additional required wrapper -->
+                
                 <div class="swiper-wrapper rooms__swiper-wrapper">
-                <!-- Slides -->
+
                     <div class="swiper-slide rooms__swiper-slide">
                         <div class="rooms__services">
-                            <img src="assets/bed-icon.png" alt="a bed">
-                            <img src="assets/wifi-icon.png" alt="a wifi logo">
-                            <img src="assets/car-icon.png" alt="a car">
-                            <img src="assets/snowflake-icon.png" alt="a snowflake">
-                            <img src="assets/gym-icon.png" alt="a gym icon">
-                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
-                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                            <img src="assets/home/bed-icon.png" alt="a bed">
+                            <img src="assets/home/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/home/car-icon.png" alt="a car">
+                            <img src="assets/home/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/home/gym-icon.png" alt="a gym icon">
+                            <img src="assets/home/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/home/cocktail-icon.png" alt="a cocktail">
                         </div>
-                        <img class="rooms__slider-imgs" src="assets/room-slider-1.jpg" alt="a hotel room" height="244">
+                        <img class="rooms__slider-imgs" src="assets/home/room-slider-1.jpg" alt="a hotel room" height="244">
                         <div class="rooms__description-price">
                             <h4>Minimal Duplex Room</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -98,15 +104,15 @@
                     </div>
                     <div class="swiper-slide rooms__swiper-slide">                
                         <div class="rooms__services">
-                            <img src="assets/bed-icon.png" alt="a bed">
-                            <img src="assets/wifi-icon.png" alt="a wifi logo">
-                            <img src="assets/car-icon.png" alt="a car">
-                            <img src="assets/snowflake-icon.png" alt="a snowflake">
-                            <img src="assets/gym-icon.png" alt="a gym icon">
-                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
-                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                            <img src="assets/home/bed-icon.png" alt="a bed">
+                            <img src="assets/home/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/home/car-icon.png" alt="a car">
+                            <img src="assets/home/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/home/gym-icon.png" alt="a gym icon">
+                            <img src="assets/home/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/home/cocktail-icon.png" alt="a cocktail">
                         </div>
-                        <img class="rooms__slider-imgs" src="assets/room-slider-2.jpg" alt="a hotel room" height="244">
+                        <img class="rooms__slider-imgs" src="assets/home/room-slider-2.jpg" alt="a hotel room" height="244">
                         <div class="rooms__description-price">
                             <h4>Minimal Duplex Room</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -115,15 +121,15 @@
                     </div>
                     <div class="swiper-slide rooms__swiper-slide">
                         <div class="rooms__services">
-                            <img src="assets/bed-icon.png" alt="a bed">
-                            <img src="assets/wifi-icon.png" alt="a wifi logo">
-                            <img src="assets/car-icon.png" alt="a car">
-                            <img src="assets/snowflake-icon.png" alt="a snowflake">
-                            <img src="assets/gym-icon.png" alt="a gym icon">
-                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
-                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                            <img src="assets/home/bed-icon.png" alt="a bed">
+                            <img src="assets/home/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/home/car-icon.png" alt="a car">
+                            <img src="assets/home/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/home/gym-icon.png" alt="a gym icon">
+                            <img src="assets/home/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/home/cocktail-icon.png" alt="a cocktail">
                         </div>
-                        <img class="rooms__slider-imgs" src="assets/room-slider-3.jpg" alt="a hotel room" height="244">
+                        <img class="rooms__slider-imgs" src="assets/home/room-slider-3.jpg" alt="a hotel room" height="244">
                         <div class="rooms__description-price">
                             <h4>Minimal Duplex Room</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -132,15 +138,15 @@
                     </div>
                     <div class="swiper-slide rooms__swiper-slide">
                         <div class="rooms__services">
-                            <img src="assets/bed-icon.png" alt="a bed">
-                            <img src="assets/wifi-icon.png" alt="a wifi logo">
-                            <img src="assets/car-icon.png" alt="a car">
-                            <img src="assets/snowflake-icon.png" alt="a snowflake">
-                            <img src="assets/gym-icon.png" alt="a gym icon">
-                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
-                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                            <img src="assets/home/bed-icon.png" alt="a bed">
+                            <img src="assets/home/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/home/car-icon.png" alt="a car">
+                            <img src="assets/home/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/home/gym-icon.png" alt="a gym icon">
+                            <img src="assets/home/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/home/cocktail-icon.png" alt="a cocktail">
                         </div>
-                        <img class="rooms__slider-imgs" src="assets/room-slider-4.jpg" alt="a hotel room" height="244">
+                        <img class="rooms__slider-imgs" src="assets/home/room-slider-4.jpg" alt="a hotel room" height="244">
                         <div class="rooms__description-price">
                             <h4>Minimal Duplex Room</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -149,7 +155,7 @@
                     </div>
                 </div>
     
-                <!-- If we need navigation buttons -->
+                
                 <div class="swiper-button-prev rooms__swiper-buttons"></div>
                 <div class="swiper-button-next rooms__swiper-buttons"></div>
             </div>
@@ -161,7 +167,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
             <div class="intro-video__video">
                 <video controls>
-                    <source src="assets/hotel-miranda-video.mp4" type="video/mp4">
+                    <source src="assets/home/hotel-miranda-video.mp4" type="video/mp4">
                 </video>
             </div>
             <button>BOOK NOW</button>
@@ -173,7 +179,7 @@
             <div class="facilities__swiper">
                 <div class="facilities__img-number">
                     <p class="facilities__number-01">01</p>
-                    <img src="assets/features-1.png" alt="a hand touching a rating star">
+                    <img src="assets/home/features-1.png" alt="a hand touching a rating star">
                 </div>
                 <h3 class="facilities__title-1">Have High Rating</h3>
                 <p class="facilities__text-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
@@ -182,26 +188,26 @@
 
         <section class="food-menu">
             <div class="food-menu__donut-img">
-                <img src="assets/donut.png" alt="a donut">
+                <img src="assets/home/donut.png" alt="a donut">
             </div>
             <h6>MENU</h6>
             <h2>Our Foods Menu</h2>
             <div class="food-menu__container-food">
-                <img src="assets/eggs-bacon.jpg" alt="eggs and bacon" width="120" height="120">
+                <img src="assets/home/eggs-bacon.jpg" alt="eggs and bacon" width="120" height="120">
                 <div class="food-menu__text-food">
                     <h5>Eggs & Bacon</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
             <div class="food-menu__container-food">
-                <img src="assets/tea-coffee.jpg" alt="a cup of tea" width="120" height="120">
+                <img src="assets/home/tea-coffee.jpg" alt="a cup of tea" width="120" height="120">
                 <div class="food-menu__text-food">
                     <h5>Tea or Coffee</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                 </div>
             </div>
             <div class="food-menu__container-food">
-                <img src="assets/chia-oatmeal.jpg" alt="a oatmeal plate" width="120" height="120">
+                <img src="assets/home/chia-oatmeal.jpg" alt="a oatmeal plate" width="120" height="120">
                 <div class="food-menu__text-food">
                     <h5>Chia Oatmeal</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
@@ -218,16 +224,16 @@
         </section>
 
         <section class="stats">
-            <img src="assets/rocket.png" alt="a rocket">
+            <img src="assets/home/rocket.png" alt="a rocket">
             <h3>84k+<span>+</span> </h3>
             <p>Projects are Completed</p>
-            <img src="assets/personal-stats.png" alt="a staff of the hotel">
+            <img src="assets/home/personal-stats.png" alt="a staff of the hotel">
             <h3>10M<span>+</span></h3>
             <p>Active Backers Around World</p>
-            <img src="assets/chart.png" alt="a chart">
+            <img src="assets/home/chart.png" alt="a chart">
             <h3>02k<span>+</span></h3>
             <p>Categories Served</p>
-            <img src="assets/book.png" alt="a book">
+            <img src="assets/home/book.png" alt="a book">
             <h3>100M<span>+</span></h3>
             <p>Idea Raised Funds</p>
         </section>
@@ -244,19 +250,19 @@
         <p class="footer__main-text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
         <nav>
             <a href="">
-                <img src="assets/facebook-logo.png" alt="facebook logo">
+                <img src="assets/home/facebook-logo.png" alt="facebook logo">
             </a>
             <a href="">
-                <img class="footer__twitter" src="assets/twitter-logo.png" alt="twitter logo">    
+                <img class="footer__twitter" src="assets/home/twitter-logo.png" alt="twitter logo">    
             </a>
             <a href="">
-                <img src="assets/behance-logo.png" alt="behance logo">    
+                <img src="assets/home/behance-logo.png" alt="behance logo">    
             </a>
             <a href="">
-                <img src="assets/linkedin-logo.png" alt="linkedin logo">    
+                <img src="assets/home/linkedin-logo.png" alt="linkedin logo">    
             </a>
             <a href="">
-                <img src="assets/youtube-logo.png" alt="youtube logo">    
+                <img src="assets/home/youtube-logo.png" alt="youtube logo">    
             </a>
         </nav>
         <h3>Services.</h3>
@@ -278,21 +284,21 @@
         </div>
         <h3 class="footer__contact-us">Contact Us.</h3>
         <div class="footer__contact">
-            <img src="assets/phone.png" alt="a phone">
+            <img src="assets/home/phone.png" alt="a phone">
             <ul>
                 <li class="footer__text-contact">Phone Number</li>
                 <li class="footer__phone-number">+ 987 876 765 76 577</li>
             </ul>
         </div>
         <div class="footer__contact">
-            <img src="assets/email.png" alt="a mail">
+            <img src="assets/home/email.png" alt="a mail">
             <ul>
                 <li class="footer__text-contact">Phone Number</li>
                 <li class="footer__phone-number">+ 987 876 765 76 577</li>
             </ul>
         </div>
         <div class="footer__contact">
-            <img src="assets/location.png" alt="a pinpoint">
+            <img src="assets/home/location.png" alt="a pinpoint">
             <ul>
                 <li class="footer__text-contact">Phone Number</li>
                 <li class="footer__phone-number">+ 987 876 765 76 577</li>
