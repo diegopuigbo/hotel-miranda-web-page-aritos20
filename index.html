@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Hotel Miranda</title>
 </head>
 <body>
@@ -70,22 +74,84 @@
         <section class="rooms">
             <h6>ROOMS</h6>
             <h2>Hand Picked Rooms</h2>
-            <div class="rooms__services">
-                <img src="assets/bed-icon.png" alt="a bed">
-                <img src="assets/wifi-icon.png" alt="a wifi logo">
-                <img src="assets/car-icon.png" alt="a car">
-                <img src="assets/snowflake-icon.png" alt="a snowflake">
-                <img src="assets/gym-icon.png" alt="a gym icon">
-                <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
-                <img src="assets/cocktail-icon.png" alt="a cocktail">
-            </div>
-            <div>
-                Slider de imagnes con swiperjs
-            </div>
-            <div class="rooms__description-price">
-                <h4>Minimal Duplex Room</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                <p>$345<span>/Night</span></p>
+            <!-- Slider main container -->
+            <div class="swiper rooms__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper rooms__swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide rooms__swiper-slide">
+                        <div class="rooms__services">
+                            <img src="assets/bed-icon.png" alt="a bed">
+                            <img src="assets/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/car-icon.png" alt="a car">
+                            <img src="assets/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/gym-icon.png" alt="a gym icon">
+                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                        </div>
+                        <img class="rooms__slider-imgs" src="assets/room-slider-1.jpg" alt="a hotel room" height="244">
+                        <div class="rooms__description-price">
+                            <h4>Minimal Duplex Room</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <p>$345<span>/Night</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide rooms__swiper-slide">                
+                        <div class="rooms__services">
+                            <img src="assets/bed-icon.png" alt="a bed">
+                            <img src="assets/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/car-icon.png" alt="a car">
+                            <img src="assets/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/gym-icon.png" alt="a gym icon">
+                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                        </div>
+                        <img class="rooms__slider-imgs" src="assets/room-slider-2.jpg" alt="a hotel room" height="244">
+                        <div class="rooms__description-price">
+                            <h4>Minimal Duplex Room</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <p>$345<span>/Night</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide rooms__swiper-slide">
+                        <div class="rooms__services">
+                            <img src="assets/bed-icon.png" alt="a bed">
+                            <img src="assets/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/car-icon.png" alt="a car">
+                            <img src="assets/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/gym-icon.png" alt="a gym icon">
+                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                        </div>
+                        <img class="rooms__slider-imgs" src="assets/room-slider-3.jpg" alt="a hotel room" height="244">
+                        <div class="rooms__description-price">
+                            <h4>Minimal Duplex Room</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <p>$345<span>/Night</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide rooms__swiper-slide">
+                        <div class="rooms__services">
+                            <img src="assets/bed-icon.png" alt="a bed">
+                            <img src="assets/wifi-icon.png" alt="a wifi logo">
+                            <img src="assets/car-icon.png" alt="a car">
+                            <img src="assets/snowflake-icon.png" alt="a snowflake">
+                            <img src="assets/gym-icon.png" alt="a gym icon">
+                            <img src="assets/non-smoking-icon.png" alt="a non non-smoking sign">
+                            <img src="assets/cocktail-icon.png" alt="a cocktail">
+                        </div>
+                        <img class="rooms__slider-imgs" src="assets/room-slider-4.jpg" alt="a hotel room" height="244">
+                        <div class="rooms__description-price">
+                            <h4>Minimal Duplex Room</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <p>$345<span>/Night</span></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev rooms__swiper-buttons"></div>
+                <div class="swiper-button-next rooms__swiper-buttons"></div>
             </div>
         </section>
 
@@ -237,5 +303,8 @@
             <p>Terms of use    |    Privacy Environmental Policy</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
