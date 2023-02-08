@@ -1,13 +1,15 @@
-@use 'header';
-@use 'principal';
-@use 'check-in';
-@use 'about-us';
-@use 'rooms';
-@use 'intro-video';
-@use 'facilities';
-@use 'food-menu';
-@use 'stats';
-@use 'footer';
+@use 'home/header';
+@use 'home/principal';
+@use 'home/check-in';
+@use 'home/discover';
+@use 'home/rooms';
+@use 'home/intro-video';
+@use 'home/facilities';
+@use 'home/food-menu';
+@use 'home/stats';
+@use 'home/footer';
+@use 'about-us/about-us-principal';
+@use 'about-us/about-us-section-1';
 
 html, * {
     box-sizing: border-box;

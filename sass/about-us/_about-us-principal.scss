@@ -1,0 +1,53 @@
+.about-us-principal {
+    background-color: var(--principal-background);
+
+    h4 {
+        width: 65%;
+        font-family: var(--font-archivo);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        color: var(--white-text);
+        padding-top: 145px;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+    h1 {
+        width: 90%;
+        font-family: var(--font-old-standard);
+        font-weight: 400;
+        font-size: 56px;
+        letter-spacing: -1.2px;
+        color: var(--white-text);
+        margin-left: 5%;
+        margin-bottom: 47px;
+    }
+
+    &__big-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__container{
+        margin-right: 5%;
+        background-color: var(--white-text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 10px;
+
+        p {
+            padding: 12px 18px;
+            font-family: var(--font-archivo);
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: -0.48px;
+            word-spacing: 4px;
+            color: var(--secondary-background);
+
+            span {
+                color: var(--gold);
+            }
+        }
+    }
+}
