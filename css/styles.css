@@ -1578,6 +1578,104 @@
   border: none;
 }
 
+.details-room {
+  padding-top: 48px;
+}
+.details-room h6 {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--sections-color-letter);
+  margin-left: 5%;
+  margin-bottom: 12px;
+}
+.details-room h2 {
+  font-family: var(--font-old-standard);
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -1.44px;
+  color: var(--secondary-background);
+  margin-left: 5%;
+  margin-bottom: 16px;
+}
+.details-room p {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--gold);
+  margin-left: 5%;
+  margin-bottom: 16px;
+}
+.details-room p span {
+  font-size: 13px;
+}
+.details-room img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+  margin-bottom: 49px;
+}
+
+.details-availability h6 {
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.54px;
+  text-align: center;
+  color: var(--secondary-background);
+  margin-bottom: 35px;
+}
+.details-availability label:nth-child(2),
+.details-availability label:nth-child(4) {
+  display: block;
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--secondary-background);
+  margin-left: 10%;
+  margin-bottom: 13px;
+}
+.details-availability input:nth-child(3),
+.details-availability input:nth-child(5) {
+  display: block;
+  width: 77%;
+  margin: 0 auto;
+  background-color: #F8F8F8;
+  border: none;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 19px;
+}
+.details-availability button {
+  display: block;
+  width: 217px;
+  height: 60px;
+  background-color: var(--gold);
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  cursor: pointer;
+  font-family: var(--font-archivo);
+  font-weight: 400;
+  border: none;
+  width: 290px;
+  margin: 0 auto;
+}
+.details-availability p {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 48px;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--sections-color-letter);
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;

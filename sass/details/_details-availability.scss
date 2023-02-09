@@ -1,0 +1,56 @@
+@use '../home/principal' as principal;
+
+.details-availability {
+    h6 {
+        font-family: var(--font-archivo);
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: -0.54px;
+        text-align: center;
+        color: var(--secondary-background);
+        margin-bottom: 35px;
+    }
+
+    label:nth-child(2),
+    label:nth-child(4) {
+        display: block;
+        font-family: var(--font-archivo);
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--secondary-background);
+        margin-left: 10%;
+        margin-bottom: 13px;
+    }
+
+    input:nth-child(3),
+    input:nth-child(5) {
+        display: block;
+        width: 77%;
+        margin: 0 auto;
+        background-color: #F8F8F8;
+        border: none;
+        outline: none;
+        padding: 15px;
+        margin-bottom: 19px;
+    }
+
+    button {
+        @include principal.button-style(var(--gold));
+        font-family: var(--font-archivo);
+        font-weight: 400;
+        border: none;
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    p {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 48px;
+        font-family: var(--font-roboto);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--sections-color-letter);
+    }
+}

@@ -1,0 +1,44 @@
+.details-room {
+    padding-top: 48px;
+
+    h6 {
+        font-family: var(--font-archivo);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: var(--sections-color-letter);
+        margin-left: 5%;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        font-family: var(--font-old-standard);
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: -1.44px;
+        color: var(--secondary-background);
+        margin-left: 5%;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-family: var(--font-archivo);
+        font-weight: 700;
+        font-size: 32px;
+        color: var(--gold);
+        margin-left: 5%;
+        margin-bottom: 16px;
+
+        span {
+            font-size: 13px;
+        }
+    }
+
+    img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        max-width: 400px;
+        margin-bottom: 49px;
+    }
+}

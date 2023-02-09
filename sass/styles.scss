@@ -22,6 +22,8 @@
 @use 'contact/contact-data';
 @use 'contact/contact-map';
 @use 'contact/contact-form';
+@use 'details/details-room';
+@use 'details/details-availability';
 
 html, * {
     box-sizing: border-box;
