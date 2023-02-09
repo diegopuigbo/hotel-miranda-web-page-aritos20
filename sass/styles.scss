@@ -18,6 +18,9 @@
 @use 'offers/offers-principal';
 @use 'offers/offers-deals';
 @use 'offers/offers-popular';
+@use 'contact/contact-principal';
+@use 'contact/contact-data';
+@use 'contact/contact-map';
 
 html, * {
     box-sizing: border-box;
