@@ -15,6 +15,8 @@
 @use 'about-us/about-us-counter';
 @use 'rooms/rooms-principal';
 @use 'rooms/rooms-slider';
+@use 'offers/offers-principal';
+@use 'offers/offers-deals';
 
 html, * {
     box-sizing: border-box;

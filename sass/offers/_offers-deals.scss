@@ -1,0 +1,108 @@
+@use '../home/principal' as principal;
+
+.offers-deals {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+
+    &__room {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 8px;
+        width: 100%;
+        background-image: url("../../assets/home/room-slider-1.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 162px;
+    }
+
+    &__price {
+        font-family: var(--font-archivo);
+        font-weight: 700;
+        font-size: 23px;
+        color: var(--gold);
+        margin-right: 12px;
+
+        .line {
+            text-decoration-line: line-through;
+        }
+        
+        span:nth-child(2) {
+            font-size: 11px;
+        }
+    }
+
+    .new-price {
+        font-size: 30px;
+        color: #DE5777;
+        margin-bottom: 4px;
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+    h6 {
+        font-family: var(--font-archivo);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2.8px;
+        color: var(--sections-color-letter);
+        margin-top: 16px;
+        margin-left: 4%;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        width: 90%;
+        font-family: var(--font-old-standard);
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: -1.4px;
+        margin-left: 4%;
+        color: var(--secondary-background);
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        width: 90%;
+        font-family: var(--font-roboto);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--sections-color-letter);
+        margin-left: 4%;
+        margin-bottom: 24px;
+    }
+
+    &__services {
+        width: 90%;
+        max-width: 375px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 4%;
+        margin-bottom: 28px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+        img {
+            margin-right: 8px;
+        }
+    }
+
+    button {
+        @include principal.button-style(#BDAC8D);
+        border: none;
+        margin-left: 4%;
+    }
+}
