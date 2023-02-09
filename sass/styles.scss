@@ -13,6 +13,8 @@
 @use 'about-us/about-us-restaurant';
 @use 'about-us/about-us-facilities';
 @use 'about-us/about-us-counter';
+@use 'rooms/rooms-principal';
+@use 'rooms/rooms-slider';
 
 html, * {
     box-sizing: border-box;
