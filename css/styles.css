@@ -1501,6 +1501,83 @@
   margin-bottom: 60px;
 }
 
+.contact-form {
+  padding-bottom: 60px;
+}
+.contact-form form {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+.contact-form form input {
+  display: block;
+  width: 100%;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--sections-color-letter);
+  padding: 20px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 16px;
+}
+.contact-form form textarea {
+  display: block;
+  width: 100%;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--sections-color-letter);
+  padding: 20px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 16px;
+  background: #F8F8F8 url("../assets/contact/pen.png") no-repeat left;
+  background-position-x: 12px;
+  background-position-y: 20px;
+  padding-bottom: 131px;
+  resize: none;
+}
+.contact-form form input:nth-child(1) {
+  background: #F8F8F8 url("../assets/contact/name.png") no-repeat left;
+  background-position-x: 12px;
+  background-position-y: 20px;
+}
+.contact-form form input:nth-child(2) {
+  background: #F8F8F8 url("../assets/contact/cell-phone.png") no-repeat left;
+  background-position-x: 12px;
+  background-position-y: 20px;
+}
+.contact-form form input:nth-child(3) {
+  background: #F8F8F8 url("../assets/contact/mail-envelope.png") no-repeat left;
+  background-position-x: 12px;
+  background-position-y: 20px;
+}
+.contact-form form input:nth-child(4) {
+  background: #F8F8F8 url("../assets/contact/subject.png") no-repeat left;
+  background-position-x: 12px;
+  background-position-y: 20px;
+}
+.contact-form button {
+  display: block;
+  width: 217px;
+  height: 60px;
+  background-color: var(--gold);
+  font-family: var(--font-archivo);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: var(--white-text);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 258px;
+  font-family: var(--font-roboto);
+  border: none;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
