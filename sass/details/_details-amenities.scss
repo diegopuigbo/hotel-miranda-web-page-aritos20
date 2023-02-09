@@ -1,0 +1,18 @@
+.details-amenities {
+    h2 {
+        font-family: var(--font-old-standard);
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--secondary-background);
+        margin-left: 5%;
+        margin-bottom: 13px;
+    }
+
+    span {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        border: 1px solid #F1F1F1;
+    }
+}
