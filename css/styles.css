@@ -1232,7 +1232,7 @@
   align-items: flex-end;
   gap: 8px;
   width: 100%;
-  background-image: url("../../assets/home/room-slider-1.jpg");
+  background-image: url("../assets/home/room-slider-1.jpg");
   background-position: center;
   background-size: cover;
   height: 162px;
@@ -1319,6 +1319,92 @@
   cursor: pointer;
   border: none;
   margin-left: 4%;
+}
+
+.offers-popular {
+  background-color: var(--secondary-background);
+  margin-top: 60px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+.offers-popular h6 {
+  font-family: var(--font-archivo);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #BDAC8D;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.offers-popular h2 {
+  text-align: center;
+  font-family: var(--font-old-standard);
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  color: var(--white-text);
+  margin-bottom: 48px;
+}
+.offers-popular__imgs-container {
+  background-color: var(--white-text);
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 24px;
+}
+.offers-popular__imgs {
+  width: 100%;
+  object-fit: cover;
+}
+.offers-popular__services {
+  position: relative;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  height: 40px;
+  width: 256px;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+  background-color: var(--white-text);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.offers-popular__description-price {
+  background-color: var(--white-text);
+  padding-bottom: 28px;
+}
+.offers-popular__description-price h4 {
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: var(--font-old-standard);
+  font-size: 28px;
+  letter-spacing: -1.2px;
+  font-weight: 400;
+  color: var(--secondary-background);
+}
+.offers-popular__description-price div {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+}
+.offers-popular__description-price div p:nth-child(1) {
+  font-family: var(--font-archivo);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.offers-popular__description-price div p:nth-child(2) {
+  font-family: var(--font-archivo);
+  font-size: 16px;
+  font-weight: 700;
+  color: #BDBDBD;
+}
+.offers-popular__lorem {
+  text-align: center;
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--sections-color-letter);
+  margin-bottom: 12px;
 }
 
 html, * {
