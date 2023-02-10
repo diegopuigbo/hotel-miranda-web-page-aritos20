@@ -59,3 +59,11 @@ const swiperMenu = new Swiper(".food-menu__swiper-menu", {
       el: ".swiper-pagination",
     },
   });
+
+const swiperAboutUsFacilities = new Swiper(".about-us-facilities__swiper", {
+    loop: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
