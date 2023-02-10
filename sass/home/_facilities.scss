@@ -57,5 +57,14 @@
         line-height: 24px;
         color: var(--sections-color-letter);
         margin-left: 9%;
+        margin-bottom: 60px;
+    }
+
+    &__swiper {
+        padding-bottom: 10px;
+    }
+
+    &__pagination {
+        --swiper-pagination-color: var(--gold);
     }
 }
