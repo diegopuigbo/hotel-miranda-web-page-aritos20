@@ -41,6 +41,10 @@
         }
     }
 
+    &__swiper-menu {
+        max-width: 500px;
+    }
+
     &__text-food {
         h5 {
            font-family: var(--font-old-standard); 
@@ -58,5 +62,47 @@
             line-height: 24px;
             color: var(--secondary-background);
         }
+    }
+
+    &__nav-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+        gap: 16px;
+    }
+
+    &__prev-button,
+    &__next-button {
+        color: var(--color-titles);
+        padding: 10px 16px;
+        background-color: var(--white-text);
+    }
+
+    &__prev-button:hover,
+    &__next-button:hover {
+        background-color: var(--gold);
+        color: var(--white-text);
+        transition: 0.3s;
+    }
+
+    &__img-food-swiper {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    &__img-slide {
+        img {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            object-fit: cover;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__pagination {
+        --swiper-pagination-color: var(--gold);
     }
 }

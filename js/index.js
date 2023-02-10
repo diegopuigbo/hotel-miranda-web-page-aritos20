@@ -15,11 +15,13 @@ xMenu.addEventListener('click', () => {
 });
 
 const swiper = new Swiper('.rooms__swiper', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
+
+    autoplay: {
+      delay: 6000
+    },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -28,6 +30,30 @@ const swiper = new Swiper('.rooms__swiper', {
 
 const swiperFacilities = new Swiper(".facilities__swiper", {
     loop: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+const swiperMenu = new Swiper(".food-menu__swiper-menu", {
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: "1",
+  
+    navigation: {
+      nextEl: ".food-menu__next-button",
+      prevEl: ".food-menu__prev-button",
+    },
+  });
+
+  const swiperImgFood = new Swiper(".food-menu__img-food-swiper", {
+    loop: true,
+    spaceBetween: 30,
+
+    autoplay: {
+      delay: 5000
+    },
 
     pagination: {
       el: ".swiper-pagination",

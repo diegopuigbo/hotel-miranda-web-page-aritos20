@@ -595,6 +595,9 @@
 .food-menu__container-food img {
   object-fit: cover;
 }
+.food-menu__swiper-menu {
+  max-width: 500px;
+}
 .food-menu__text-food h5 {
   font-family: var(--font-old-standard);
   font-weight: 400;
@@ -610,12 +613,45 @@
   line-height: 24px;
   color: var(--secondary-background);
 }
+.food-menu__nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  gap: 16px;
+}
+.food-menu__prev-button, .food-menu__next-button {
+  color: var(--color-titles);
+  padding: 10px 16px;
+  background-color: var(--white-text);
+}
+.food-menu__prev-button:hover, .food-menu__next-button:hover {
+  background-color: var(--gold);
+  color: var(--white-text);
+  transition: 0.3s;
+}
+.food-menu__img-food-swiper {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.food-menu__img-slide img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  object-fit: cover;
+  padding-bottom: 40px;
+}
+.food-menu__pagination {
+  --swiper-pagination-color: var(--gold);
+}
 
 .stats {
   background-color: var(--secondary-background);
   padding-top: 48px;
   padding-bottom: 1px;
   margin-bottom: 92px;
+  margin-top: 60px;
 }
 .stats img {
   display: block;
