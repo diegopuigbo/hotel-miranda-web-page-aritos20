@@ -17,6 +17,7 @@ xMenu.addEventListener('click', () => {
 const swiper = new Swiper('.rooms__swiper', {
     direction: 'horizontal',
     loop: true,
+    spaceBetween: 20,
 
     autoplay: {
       delay: 6000

@@ -15,4 +15,18 @@
         margin-bottom: 35px;
         border: 1px solid #F1F1F1;
     }
+
+    &__swiper-buttons {
+        --swiper-navigation-size: 10px;
+        --swiper-navigation-color: var(--color-titles);
+        padding: 18px;
+        background-color: var(--white-text);
+        top: 20% !important;
+    }
+
+    &__swiper-buttons:hover {
+        background-color: var(--gold);
+        --swiper-navigation-color: var(--white-text);
+        transition: 0.3s;
+    }
 }
