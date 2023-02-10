@@ -22,9 +22,11 @@
 @use 'contact/contact-data';
 @use 'contact/contact-map';
 @use 'contact/contact-form';
-@use 'details/details-room';
-@use 'details/details-availability';
 @use 'details/details-amenities';
+@use 'details/details-availability';
+@use 'details/details-room';
+@use 'details/details-cancellation';
+@use 'details/details-related-rooms';
 
 html, * {
     box-sizing: border-box;

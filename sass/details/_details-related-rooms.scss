@@ -1,0 +1,18 @@
+.details-related-rooms {
+    h2 {
+        font-family: var(--font-old-standard);
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--secondary-background);
+        margin-bottom: 13px;
+        margin-left: 5%;
+    }
+
+    &__line {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        border: 1px solid #F1F1F1;
+    }
+}
