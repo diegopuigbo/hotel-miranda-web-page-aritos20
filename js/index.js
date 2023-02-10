@@ -67,3 +67,16 @@ const swiperAboutUsFacilities = new Swiper(".about-us-facilities__swiper", {
       el: ".swiper-pagination",
     },
   });
+
+const swiperAboutUsCounter = new Swiper(".about-us-counter__swiper-hotel-imgs", {
+    loop: true,
+    spaceBetween: 30,
+
+    autoplay: {
+      delay: 5000
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });

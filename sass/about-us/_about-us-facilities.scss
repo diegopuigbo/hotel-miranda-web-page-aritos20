@@ -1,6 +1,6 @@
 .about-us-facilities {
     background-color: var(--secondary-background);
-    padding-bottom: 73px;
+    padding-bottom: 25px;
     margin-bottom: 60px;
 
     h6 {
@@ -70,5 +70,10 @@
         color: var(--white-text);
         margin-left: 4%;
         padding-bottom: 51px;
+        margin-bottom: 46px;
+    }
+
+    &__pagination {
+        --swiper-pagination-color: var(--gold);
     }
 }

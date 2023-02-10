@@ -983,7 +983,7 @@
 
 .about-us-facilities {
   background-color: var(--secondary-background);
-  padding-bottom: 73px;
+  padding-bottom: 25px;
   margin-bottom: 60px;
 }
 .about-us-facilities h6 {
@@ -1046,6 +1046,10 @@
   color: var(--white-text);
   margin-left: 4%;
   padding-bottom: 51px;
+  margin-bottom: 46px;
+}
+.about-us-facilities__pagination {
+  --swiper-pagination-color: var(--gold);
 }
 
 .about-us-counter h6 {
@@ -1098,6 +1102,12 @@
   font-weight: 400;
   font-size: 16px;
   color: var(--sections-color-letter);
+}
+.about-us-counter__swiper-hotel-imgs {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .rooms-principal {
