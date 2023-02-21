@@ -193,6 +193,25 @@
   margin-left: 5%;
 }
 
+@media only screen and (min-width: 1000px) {
+  .principal h4 {
+    margin-left: 19.5%;
+  }
+  .principal h1 {
+    width: 50%;
+    margin-left: 19.5%;
+    font-size: 120px;
+  }
+  .principal__button--gold {
+    margin-left: 19.5%;
+  }
+  .principal__button--black {
+    margin-left: 30px;
+  }
+  .principal__button--gold, .principal__button--black {
+    display: inline;
+  }
+}
 .check-in {
   background-color: var(--secondary-background);
   padding-bottom: 36px;
@@ -264,6 +283,23 @@
   margin-left: 5%;
 }
 
+@media only screen and (min-width: 1000px) {
+  .check-in {
+    padding-bottom: 18px;
+  }
+  .check-in__arrival-container {
+    display: inline-block;
+    width: 22%;
+    margin-left: 18.5%;
+  }
+  .check-in__departure-container {
+    display: inline-block;
+    width: 22%;
+  }
+  .check-in button {
+    display: inline-block;
+  }
+}
 .discover {
   margin-top: 60px;
 }
@@ -392,6 +428,33 @@
   padding-top: 54px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .discover__main-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+  }
+  .discover__right-info {
+    width: 50%;
+    margin-top: 75px;
+  }
+  .discover__strong-team-img, .discover__luxury-room {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .discover__strong-team-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .discover__luxury-room-container {
+    display: flex;
+  }
+  .discover__strong-team-img, .discover__strong-team, .discover__luxury-img, .discover__luxury-room {
+    min-width: 270px;
+  }
+}
 .rooms h6 {
   text-align: center;
   font-family: var(--font-archivo);

@@ -129,3 +129,42 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .discover {
+        &__main-container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 100px;
+        }
+
+        &__right-info {
+            width: 50%;
+            margin-top: 75px;
+        }
+
+        &__strong-team-img,
+        &__luxury-room {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        &__strong-team-container {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        &__luxury-room-container {
+            display: flex;
+        }
+
+        &__strong-team-img,
+        &__strong-team,
+        &__luxury-img,
+        &__luxury-room {
+            min-width: 270px;
+        }
+    }
+}

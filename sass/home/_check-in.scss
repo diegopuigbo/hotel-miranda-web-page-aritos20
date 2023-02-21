@@ -57,3 +57,23 @@
         margin-left: 5%;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .check-in {
+        padding-bottom: 18px;
+
+        &__arrival-container {
+            display: inline-block;
+            width: 22%;
+            margin-left: 18.5%;
+        }
+        &__departure-container {
+            display: inline-block;
+            width: 22%;
+        }
+
+        button {
+            display: inline-block;
+        }
+    }
+}
