@@ -88,6 +88,56 @@
   color: var(--color-titles);
 }
 
+@media only screen and (min-width: 1000px) {
+  .header {
+    position: static;
+    background-color: var(--secondary-background);
+    align-items: flex-start;
+    height: 100px;
+  }
+  .header__container {
+    position: fixed;
+    transform: translateY(45%);
+    width: 74%;
+    background-color: var(--white-text);
+    height: 100px;
+    z-index: 100;
+  }
+  .header__burger-menu, .header__x-menu {
+    display: none;
+  }
+  .header__dropdown-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    margin-left: 8.8%;
+  }
+  .header__dropdown-menu li {
+    font-family: var(--font-archivo);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-titles);
+  }
+  .header__logo {
+    padding: 0px 6px;
+  }
+  .header__h {
+    font-size: 40px;
+  }
+  .header__name {
+    flex: 0;
+  }
+  .header__name li:nth-child(1) {
+    font-size: 26px;
+  }
+  .header__name li:nth-child(2) {
+    font-size: 26px;
+  }
+  .header__account-search {
+    margin-right: 8%;
+  }
+}
 .principal {
   background-color: var(--principal-background);
   padding-bottom: 75px;
