@@ -18,6 +18,7 @@ const swiper = new Swiper('.rooms__swiper', {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 20,
+    slidesPerView: 1,
 
     autoplay: {
       delay: 6000
@@ -27,6 +28,12 @@ const swiper = new Swiper('.rooms__swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+      1000: {
+        slidesPerView: 3
+      }
+    }
   });
 
 const swiperFacilities = new Swiper(".facilities__swiper", {

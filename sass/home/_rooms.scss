@@ -102,3 +102,20 @@
         transition: 0.3s;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .rooms {
+        &__slider-imgs {
+            height: 400px;
+        }
+
+        &__swiper-buttons {
+            --swiper-navigation-size: 10px;
+            --swiper-navigation-color: var(--color-titles);
+            --swiper-navigation-sides-offset: 27%;
+            padding: 18px;
+            background-color: var(--white-text);
+            top: 35% !important;
+        }
+    }
+}
