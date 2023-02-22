@@ -31,7 +31,7 @@ const swiper = new Swiper('.rooms__swiper', {
 
     breakpoints: {
       1000: {
-        slidesPerView: 3
+        slidesPerView: 3,
       }
     }
   });

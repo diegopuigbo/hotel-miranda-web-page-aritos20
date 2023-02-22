@@ -603,7 +603,7 @@
   height: 100%;
   object-fit: cover;
 }
-.intro-video button {
+.intro-video__button-mobile {
   display: block;
   width: 217px;
   height: 60px;
@@ -621,7 +621,44 @@
   letter-spacing: 2.8px;
   margin-left: 5%;
 }
+.intro-video__button-desktop {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .intro-video__button-desktop {
+    display: block;
+    width: 217px;
+    height: 60px;
+    background-color: var(--gold);
+    font-family: var(--font-archivo);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: var(--white-text);
+    cursor: pointer;
+    border: none;
+    background-color: #BDAC8D;
+    font-family: var(--font-archivo);
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    margin-left: 5%;
+  }
+  .intro-video__button-mobile {
+    display: none;
+  }
+  .intro-video__big-container {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 120px;
+    display: flex;
+  }
+  .intro-video__video {
+    height: 460px;
+    max-width: 520px;
+    min-width: 500px;
+  }
+}
 .facilities h6 {
   font-family: var(--font-archivo);
   font-weight: 700;
