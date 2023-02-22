@@ -719,7 +719,21 @@
 .facilities__pagination {
   --swiper-pagination-color: var(--gold);
 }
+.facilities__desktop-container {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .facilities .swiper {
+    display: none;
+  }
+  .facilities__desktop-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+  }
+}
 .food-menu {
   margin-top: 60px;
 }
