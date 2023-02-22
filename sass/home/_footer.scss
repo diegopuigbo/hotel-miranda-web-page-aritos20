@@ -157,3 +157,30 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .footer {
+        &__big-container {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        &__info-container {
+            width: 25%;
+        }
+
+        &__contact-us-container {
+            img {
+                object-fit: contain;
+            }
+        }
+
+        &__contact {
+            margin-left: 0;
+        }
+    }
+}

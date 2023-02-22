@@ -64,11 +64,15 @@
         }
     }
 
-    &__nav-buttons {
+    &__nav-buttons-mobile {
         display: flex;
         justify-content: flex-end;
         margin-right: 5%;
         gap: 16px;
+    }
+
+    &__nav-buttons-desktop {
+        display: none;
     }
 
     &__prev-button,
@@ -104,5 +108,60 @@
 
     &__pagination {
         --swiper-pagination-color: var(--gold);
+    }
+
+    &__big-donut {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .food-menu {
+
+        h6 {
+            margin-left: 2%;
+        }
+
+        h2 {
+            margin-left: 2%;
+        }
+
+        &__tiny-donut {
+            display: none;
+        }
+
+        &__big-donut {
+            display: block;
+        }
+
+        &__donut-img {
+            display: block;
+            margin-left: 4%;
+        }
+
+        &__big-container {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        &__swiper-menu {
+            width: 100%;
+            max-width: none;
+        }
+
+        &__nav-buttons-mobile {
+            display: none;
+        }
+
+        &__nav-buttons-desktop {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5%;
+            gap: 16px;
+        }
+
+        &__img-food-swiper {
+            width: 70%;
+        }
     }
 }

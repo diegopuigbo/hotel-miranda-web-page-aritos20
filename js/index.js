@@ -16,7 +16,6 @@ xMenu.addEventListener('click', () => {
 
 const swiper = new Swiper('.rooms__swiper', {
     direction: 'horizontal',
-    loop: true,
     spaceBetween: 20,
     slidesPerView: 1,
 
@@ -46,17 +45,21 @@ const swiperFacilities = new Swiper(".facilities__swiper", {
 
 const swiperMenu = new Swiper(".food-menu__swiper-menu", {
     direction: "horizontal",
-    loop: true,
     slidesPerView: "1",
   
     navigation: {
       nextEl: ".food-menu__next-button",
       prevEl: ".food-menu__prev-button",
     },
+
+    breakpoints: {
+      1000: {
+        slidesPerView: 2
+      }
+    }
   });
 
   const swiperImgFood = new Swiper(".food-menu__img-food-swiper", {
-    loop: true,
     spaceBetween: 30,
 
     autoplay: {
@@ -66,6 +69,12 @@ const swiperMenu = new Swiper(".food-menu__swiper-menu", {
     pagination: {
       el: ".swiper-pagination",
     },
+
+    breakpoints: {
+      1000: {
+        slidesPerView: 3
+      }
+    }
   });
 
 const swiperAboutUsFacilities = new Swiper(".about-us-facilities__swiper", {

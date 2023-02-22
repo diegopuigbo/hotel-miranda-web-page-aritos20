@@ -34,3 +34,14 @@
        font-size: 14px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .stats {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

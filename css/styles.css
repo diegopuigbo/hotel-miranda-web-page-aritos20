@@ -102,6 +102,7 @@
     background-color: var(--white-text);
     height: 100px;
     z-index: 100;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   }
   .header__burger-menu, .header__x-menu {
     display: none;
@@ -790,11 +791,14 @@
   line-height: 24px;
   color: var(--secondary-background);
 }
-.food-menu__nav-buttons {
+.food-menu__nav-buttons-mobile {
   display: flex;
   justify-content: flex-end;
   margin-right: 5%;
   gap: 16px;
+}
+.food-menu__nav-buttons-desktop {
+  display: none;
 }
 .food-menu__prev-button, .food-menu__next-button {
   color: var(--color-titles);
@@ -822,7 +826,48 @@
 .food-menu__pagination {
   --swiper-pagination-color: var(--gold);
 }
+.food-menu__big-donut {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .food-menu h6 {
+    margin-left: 2%;
+  }
+  .food-menu h2 {
+    margin-left: 2%;
+  }
+  .food-menu__tiny-donut {
+    display: none;
+  }
+  .food-menu__big-donut {
+    display: block;
+  }
+  .food-menu__donut-img {
+    display: block;
+    margin-left: 4%;
+  }
+  .food-menu__big-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .food-menu__swiper-menu {
+    width: 100%;
+    max-width: none;
+  }
+  .food-menu__nav-buttons-mobile {
+    display: none;
+  }
+  .food-menu__nav-buttons-desktop {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    gap: 16px;
+  }
+  .food-menu__img-food-swiper {
+    width: 70%;
+  }
+}
 .stats {
   background-color: var(--secondary-background);
   padding-top: 48px;
@@ -856,6 +901,16 @@
   font-size: 14px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .stats {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .footer {
   background-image: url("../assets/home/footer-background.png");
   background-repeat: repeat;
@@ -992,6 +1047,25 @@
   padding-bottom: 24px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer__big-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .footer__info-container {
+    width: 25%;
+  }
+  .footer__contact-us-container img {
+    object-fit: contain;
+  }
+  .footer__contact {
+    margin-left: 0;
+  }
+}
 .about-us-principal {
   background-color: var(--principal-background);
 }
