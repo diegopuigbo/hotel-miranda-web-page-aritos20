@@ -47,3 +47,29 @@
         margin-bottom: 80px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .about-us-restaurant {
+        width: 61%;
+        margin: 0 auto;
+        box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+
+        img {
+            width: 45%;
+            max-width: 530px;
+            height: 35%;
+            max-height: 420px;
+            margin: unset;
+        }
+
+        &__info {
+            button {
+                box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.36);
+            }
+        }
+    }
+}

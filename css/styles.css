@@ -1281,6 +1281,27 @@
   margin-bottom: 80px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .about-us-restaurant {
+    width: 61%;
+    margin: 0 auto;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+  .about-us-restaurant img {
+    width: 45%;
+    max-width: 530px;
+    height: 35%;
+    max-height: 420px;
+    margin: unset;
+  }
+  .about-us-restaurant__info button {
+    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.36);
+  }
+}
 .about-us-facilities {
   background-color: var(--secondary-background);
   padding-bottom: 25px;
@@ -1352,6 +1373,24 @@
   --swiper-pagination-color: var(--gold);
 }
 
+@media only screen and (min-width: 1000px) {
+  .about-us-facilities h6 {
+    padding-top: 100px;
+  }
+  .about-us-facilities h2 {
+    font-size: 80px;
+  }
+  .about-us-facilities .swiper {
+    display: none;
+  }
+  .about-us-facilities__big-container {
+    width: 70%;
+    margin: 0 auto;
+    gap: 35px;
+    display: flex;
+    margin-bottom: 35px;
+  }
+}
 .about-us-counter h6 {
   font-family: var(--font-archivo);
   font-size: 14px;

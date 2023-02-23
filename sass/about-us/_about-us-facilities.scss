@@ -77,3 +77,27 @@
         --swiper-pagination-color: var(--gold);
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .about-us-facilities {
+        h6 {
+            padding-top: 100px;
+        }
+
+        h2 {
+            font-size: 80px;
+        }
+
+        .swiper {
+            display: none;
+        }
+
+        &__big-container {
+            width: 70%;
+            margin: 0 auto;
+            gap: 35px;
+            display: flex;
+            margin-bottom: 35px;
+        }
+    }
+}
