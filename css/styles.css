@@ -1532,6 +1532,17 @@
   color: var(--gold);
 }
 
+@media only screen and (min-width: 1000px) {
+  .rooms-principal h4, .rooms-principal h1 {
+    margin-left: 19%;
+  }
+  .rooms-principal h1 {
+    font-size: 72px;
+  }
+  .rooms-principal__big-container {
+    margin-right: 19%;
+  }
+}
 .rooms-slider {
   padding-top: 48px;
 }
@@ -1568,18 +1579,18 @@
   font-weight: 400;
   color: var(--secondary-background);
 }
-.rooms-slider__description-price div {
+.rooms-slider__description-price__price-booking {
   display: flex;
   justify-content: center;
   gap: 19px;
 }
-.rooms-slider__description-price div p:nth-child(1) {
+.rooms-slider__description-price__price-booking p:nth-child(1) {
   font-family: var(--font-archivo);
   font-size: 16px;
   font-weight: 700;
   color: var(--gold);
 }
-.rooms-slider__description-price div p:nth-child(2) {
+.rooms-slider__description-price__price-booking p:nth-child(2) {
   font-family: var(--font-archivo);
   font-size: 16px;
   font-weight: 700;
@@ -1594,7 +1605,71 @@
   color: var(--sections-color-letter);
   margin-bottom: 12px;
 }
+.rooms-slider__lorem-desktop {
+  display: none;
+}
+.rooms-slider__price-booking-desktop {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .rooms-slider__imgs-container {
+    background-color: #ffffff;
+    width: 61%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+  }
+  .rooms-slider__imgs {
+    height: 305px;
+    max-width: 470px;
+  }
+  .rooms-slider__lorem {
+    display: none;
+  }
+  .rooms-slider__lorem-desktop {
+    display: inherit;
+    font-family: var(--font-roboto);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--sections-color-letter);
+    margin-bottom: 12px;
+  }
+  .rooms-slider__info-room {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .rooms-slider__services {
+    margin: unset;
+  }
+  .rooms-slider__description-price h4 {
+    text-align: left;
+  }
+  .rooms-slider__price-booking {
+    display: none;
+  }
+  .rooms-slider__price-booking-desktop {
+    display: block;
+  }
+  .rooms-slider__price-booking-desktop p:nth-child(1) {
+    font-family: var(--font-archivo);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .rooms-slider__price-booking-desktop p:nth-child(1) span {
+    font-size: 16px;
+  }
+  .rooms-slider__price-booking-desktop p:nth-child(2) {
+    font-family: var(--font-archivo);
+    font-size: 16px;
+    font-weight: 700;
+    color: #BDBDBD;
+  }
+}
 .offers-principal {
   background-color: var(--principal-background);
 }

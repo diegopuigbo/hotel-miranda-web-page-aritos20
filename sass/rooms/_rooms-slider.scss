@@ -38,7 +38,7 @@
             color: var(--secondary-background);
         }
 
-        div {
+        &__price-booking {
             display: flex;
             justify-content: center;
             gap: 19px;
@@ -67,5 +67,88 @@
         line-height: 24px;
         color: var(--sections-color-letter);
         margin-bottom: 12px;
+    }
+
+    &__lorem-desktop {
+        display: none;
+    }
+
+    &__price-booking-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .rooms-slider {
+
+        &__imgs-container {
+            background-color: #ffffff;
+            width: 61%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        &__imgs {
+            height: 305px;
+            max-width: 470px;
+        }
+
+        &__lorem {
+            display: none;
+        }
+
+        &__lorem-desktop {
+            display: inherit;
+            font-family: var(--font-roboto);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--sections-color-letter);
+            margin-bottom: 12px;
+        }
+
+        &__info-room {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__services {
+            margin: unset;
+        }
+
+        &__description-price {
+            h4 {
+                text-align: left;
+            }
+        }
+
+        &__price-booking {
+            display: none;
+        }
+
+        &__price-booking-desktop {
+            display: block;
+
+            p:nth-child(1) {
+                font-family: var(--font-archivo);
+                font-size: 40px;
+                font-weight: 700;
+                color: var(--gold);
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            p:nth-child(2) {
+                font-family: var(--font-archivo);
+                font-size: 16px;
+                font-weight: 700;
+                color: #BDBDBD;
+            } 
+        }   
     }
 }
