@@ -51,3 +51,20 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .about-us-principal {
+        h1 {
+            font-size: 72px;
+            margin-left: 19%;
+        }
+
+        h4 {
+            margin-left: 19%;
+        }
+
+        &__container {
+            margin-right: 19%;
+        }
+    }
+}

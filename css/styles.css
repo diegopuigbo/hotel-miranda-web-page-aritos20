@@ -1065,6 +1065,15 @@
   .footer__contact {
     margin-left: 0;
   }
+  .footer__container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__container p {
+    margin-left: 0;
+  }
 }
 .about-us-principal {
   background-color: var(--principal-background);
@@ -1115,6 +1124,18 @@
   color: var(--gold);
 }
 
+@media only screen and (min-width: 1000px) {
+  .about-us-principal h1 {
+    font-size: 72px;
+    margin-left: 19%;
+  }
+  .about-us-principal h4 {
+    margin-left: 19%;
+  }
+  .about-us-principal__container {
+    margin-right: 19%;
+  }
+}
 .about-us-section-1 {
   padding-top: 60px;
 }
@@ -1180,7 +1201,35 @@
 .about-us-section-1__individual-services:hover img {
   filter: brightness(2);
 }
+.about-us-section-1__bbq-party {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .about-us-section-1__video {
+    max-width: 1170px;
+    height: 650px;
+  }
+  .about-us-section-1 h3 {
+    font-size: 72px;
+    width: 55%;
+    line-height: 88px;
+    letter-spacing: -2.16px;
+  }
+  .about-us-section-1__services-container {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .about-us-section-1__services {
+    width: unset;
+    margin: unset;
+  }
+  .about-us-section-1__bbq-party {
+    display: inherit;
+  }
+}
 .about-us-restaurant img {
   display: block;
   margin: 0 auto;
