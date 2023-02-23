@@ -2207,6 +2207,20 @@
   color: var(--sections-color-letter);
 }
 
+@media only screen and (min-width: 1000px) {
+  .details-availability h6, .details-availability button,
+  .details-availability label:nth-child(2),
+  .details-availability label:nth-child(4),
+  .details-availability input:nth-child(3),
+  .details-availability input:nth-child(5) {
+    display: none;
+  }
+  .details-availability p {
+    width: 35%;
+    margin: unset;
+    margin-left: 15%;
+  }
+}
 .details-room {
   padding-top: 48px;
 }
@@ -2246,7 +2260,84 @@
   max-width: 400px;
   margin-bottom: 49px;
 }
+.details-room__book-room {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .details-room {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+  }
+  .details-room__price-room {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transform: translateY(50%);
+  }
+  .details-room__price-room h6, .details-room__price-room h2 {
+    margin-left: unset;
+  }
+  .details-room img {
+    display: inline-block;
+    height: 490px;
+    max-width: 770px;
+  }
+  .details-room__book-room {
+    display: block;
+  }
+  .details-room__book-room h6 {
+    font-family: var(--font-archivo);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+    text-align: center;
+    color: var(--secondary-background);
+    margin-bottom: 35px;
+  }
+  .details-room__book-room label:nth-child(2),
+  .details-room__book-room label:nth-child(4) {
+    display: block;
+    font-family: var(--font-archivo);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--secondary-background);
+    margin-bottom: 13px;
+  }
+  .details-room__book-room input:nth-child(3),
+  .details-room__book-room input:nth-child(5) {
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-bottom: 19px;
+  }
+  .details-room__book-room button {
+    display: block;
+    width: 217px;
+    height: 60px;
+    background-color: var(--gold);
+    font-family: var(--font-archivo);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: var(--white-text);
+    cursor: pointer;
+    font-family: var(--font-archivo);
+    font-weight: 400;
+    border: none;
+    width: 290px;
+    margin: 0 auto;
+  }
+}
 .details-cancellation h2 {
   font-family: var(--font-old-standard);
   font-size: 30px;

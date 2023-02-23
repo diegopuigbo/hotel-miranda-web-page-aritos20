@@ -55,3 +55,21 @@
         color: var(--sections-color-letter);
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .details-availability {
+        h6, button,
+        label:nth-child(2),
+        label:nth-child(4),
+        input:nth-child(3),
+        input:nth-child(5) {
+            display: none;
+        }
+
+        p {
+            width: 35%;
+            margin: unset;
+            margin-left: 15%;
+        }
+    }
+}

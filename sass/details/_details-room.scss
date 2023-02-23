@@ -1,3 +1,5 @@
+@use '../home/principal' as principal;
+
 .details-room {
     padding-top: 48px;
 
@@ -40,5 +42,83 @@
         margin: 0 auto;
         max-width: 400px;
         margin-bottom: 49px;
+    }
+
+    &__book-room {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .details-room {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+
+        &__price-room {
+            background-color: #ffffff;
+            padding: 10px;
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            transform: translateY(50%);
+
+            h6, h2 {
+                margin-left: unset;
+            }
+        }
+        
+        img {
+            display: inline-block;
+            height: 490px;
+            max-width: 770px;
+        }
+
+        &__book-room {
+            display: block;
+            
+            h6 {
+                font-family: var(--font-archivo);
+                font-weight: 700;
+                font-size: 18px;
+                letter-spacing: -0.54px;
+                text-align: center;
+                color: var(--secondary-background);
+                margin-bottom: 35px;
+            }
+        
+            label:nth-child(2),
+            label:nth-child(4) {
+                display: block;
+                font-family: var(--font-archivo);
+                font-weight: 700;
+                font-size: 14px;
+                color: var(--secondary-background);
+                margin-bottom: 13px;
+            }
+        
+            input:nth-child(3),
+            input:nth-child(5) {
+                display: block;
+                width: 290px;
+                margin: 0 auto;
+                background-color: #F8F8F8;
+                border: none;
+                outline: none;
+                padding: 15px;
+                margin-bottom: 19px;
+            }
+        
+            button {
+                @include principal.button-style(var(--gold));
+                font-family: var(--font-archivo);
+                font-weight: 400;
+                border: none;
+                width: 290px;
+                margin: 0 auto;
+            }
+        }
     }
 }
