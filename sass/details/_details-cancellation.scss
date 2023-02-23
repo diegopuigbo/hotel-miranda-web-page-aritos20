@@ -27,3 +27,23 @@
         margin-bottom: 100px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .details-cancellation {
+        h2 {
+            margin-left: 17%;
+        }
+
+        &__line {
+            width: 35%;
+            margin: unset;
+            margin-left: 15%;
+            margin-bottom: 40px;
+        }
+
+        &__conditions {
+            margin-left: 17%;
+            width: 30%;
+        }
+    }
+}

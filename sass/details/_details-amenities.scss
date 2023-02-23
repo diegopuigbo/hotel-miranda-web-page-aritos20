@@ -75,3 +75,32 @@
         margin-bottom: 104px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .details-amenities {
+        h2 {
+            margin-left: 17%;
+        }
+
+        &__line {
+            width: 32%;
+            margin: unset;
+            margin-left: 15%;
+            margin-bottom: 40px;
+        }
+
+        &__services {
+            margin-left: 17%;
+            width: 30%;
+            max-width: unset;
+        }
+
+        &__founder-container {
+            box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+            width: 370px;
+            margin-left: 15%;
+            padding: 1px 20px;
+            margin-bottom: 80px;
+        }
+    }
+}
