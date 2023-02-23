@@ -1539,7 +1539,7 @@
   .rooms-principal h1 {
     font-size: 72px;
   }
-  .rooms-principal__big-container {
+  .rooms-principal__container {
     margin-right: 19%;
   }
 }
@@ -1719,6 +1719,18 @@
   color: var(--gold);
 }
 
+@media only screen and (min-width: 1000px) {
+  .offers-principal h4 {
+    margin-left: 19%;
+  }
+  .offers-principal h1 {
+    margin-left: 19%;
+    font-size: 72px;
+  }
+  .offers-principal__container {
+    margin-right: 19%;
+  }
+}
 .offers-deals {
   padding-top: 48px;
   padding-bottom: 32px;
@@ -1821,7 +1833,51 @@
   border: none;
   margin-left: 4%;
 }
+.offers-deals__room-img {
+  display: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .offers-deals {
+    width: 70%;
+  }
+  .offers-deals__room {
+    display: none;
+  }
+  .offers-deals__room-img {
+    display: inline-block;
+    height: 570px;
+    object-fit: cover;
+  }
+  .offers-deals__room-description {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-top: 6px solid var(--gold);
+  }
+  .offers-deals__price-name {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .offers-deals__price-name h2, .offers-deals__price-name h6 {
+    width: unset;
+    margin-left: unset;
+  }
+  .offers-deals__price {
+    text-align: right;
+  }
+  .offers-deals__line {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    border: 1px solid #F1F1F1;
+  }
+}
 .offers-popular {
   background-color: var(--secondary-background);
   margin-top: 60px;

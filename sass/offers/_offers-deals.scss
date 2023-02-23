@@ -105,4 +105,57 @@
         border: none;
         margin-left: 4%;
     }
+
+    &__room-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .offers-deals {
+        width: 70%;
+
+        &__room {
+            display: none;
+        }
+
+        &__room-img {
+            display: inline-block;
+            height: 570px;
+            object-fit: cover;
+        }
+
+        &__room-description {
+            width: 90%;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border-top: 6px solid var(--gold);
+        }
+
+        &__price-name {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;
+
+            h2, h6 {
+                width: unset;
+                margin-left: unset;
+            }
+        }
+
+        &__price {
+            text-align: right;
+        }
+        
+        &__line {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 35px;
+            border: 1px solid #F1F1F1;
+        }
+    }
 }
