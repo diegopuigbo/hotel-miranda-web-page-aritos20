@@ -64,4 +64,47 @@
         margin-top: 40px;
         margin-bottom: 80px;
     }
+
+    &__hotel-imgs {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .about-us-counter {
+        h6 {
+            margin-left: 19%;
+        }
+        
+        h2 {
+            margin-left: 19%;
+            font-size: 80px;
+        }
+
+        &__facts-container {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            gap: 60px;
+        }
+
+        .swiper {
+            display: none;
+        }
+
+        &__hotel-imgs {
+            width: 65%;
+            margin: 0 auto;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 120px;
+
+            img {
+                width: 45%;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }
 }
