@@ -21,49 +21,51 @@
             outline: none;
             margin-bottom: 16px;
         }
+    }
 
-        textarea {
-            display: block;
-            width: 100%;
-            font-family: var(--font-roboto);
-            font-size: 16px;
-            font-weight: 400;
-            color: var(--sections-color-letter);
-            padding: 20px;
-            padding-left: 40px;
-            border: none;
-            outline: none;
-            margin-bottom: 16px;
-            background: #F8F8F8 url("../assets/contact/pen.png") no-repeat left;
-            background-position-x: 12px;
-            background-position-y: 20px;
-            padding-bottom: 131px;
-            resize: none;
-        }
+    &__full-name {
+        background: #F8F8F8 url("../assets/contact/name.png") no-repeat left;
+        background-position-x: 12px;
+        background-position-y: 20px;
+    }
+    
+    &__phone {
+        background: #F8F8F8 url("../assets/contact/cell-phone.png") no-repeat left;
+        background-position-x: 12px;
+        background-position-y: 20px;
+    }
 
-        input:nth-child(1) {
-            background: #F8F8F8 url("../assets/contact/name.png") no-repeat left;
-            background-position-x: 12px;
-            background-position-y: 20px;
-        }
+    &__email {
+        background: #F8F8F8 url("../assets/contact/mail-envelope.png") no-repeat left;
+        background-position-x: 12px;
+        background-position-y: 20px;
+    }
 
-        input:nth-child(2) {
-            background: #F8F8F8 url("../assets/contact/cell-phone.png") no-repeat left;
-            background-position-x: 12px;
-            background-position-y: 20px;
-        }
+    &__subject {
+        background: #F8F8F8 url("../assets/contact/subject.png") no-repeat left;
+        background-position-x: 12px;
+        background-position-y: 20px;
+    }
 
-        input:nth-child(3) {
-            background: #F8F8F8 url("../assets/contact/mail-envelope.png") no-repeat left;
-            background-position-x: 12px;
-            background-position-y: 20px;
-        }
-
-        input:nth-child(4) {
-            background: #F8F8F8 url("../assets/contact/subject.png") no-repeat left;
-            background-position-x: 12px;
-            background-position-y: 20px;
-        }
+    textarea {
+        display: block;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        font-family: var(--font-roboto);
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--sections-color-letter);
+        padding: 20px;
+        padding-left: 40px;
+        border: none;
+        outline: none;
+        margin-bottom: 16px;
+        background: #F8F8F8 url("../assets/contact/pen.png") no-repeat left;
+        background-position-x: 12px;
+        background-position-y: 20px;
+        padding-bottom: 131px;
+        resize: none;
     }
 
     button {
@@ -73,5 +75,26 @@
         width: 258px;
         font-family: var(--font-roboto);
         border: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .contact-form {
+        form {
+            width: 70%;
+            margin: 0 auto;
+            max-width: 970px;
+            display: flex;
+            gap: 20px;
+
+            input {
+                display: unset;
+            }
+        }
+
+        textarea {
+            width: 70%;
+            max-width: 970px;
+        }
     }
 }

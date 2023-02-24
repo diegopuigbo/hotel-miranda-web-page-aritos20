@@ -8,3 +8,15 @@
         margin-bottom: 60px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .contact-map {
+        &__localization {
+            width: 70%;
+            max-width: 1170px;
+            margin: 0 auto;
+            margin-bottom: 120px;
+            height: 700px;
+        }
+    }
+}

@@ -38,3 +38,12 @@
         background-image: url("../assets/contact/03.png");
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .contact-data {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 120px;
+        display: flex;
+    }
+}
