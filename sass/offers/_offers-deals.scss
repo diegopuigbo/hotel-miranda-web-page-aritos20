@@ -100,10 +100,18 @@
         }
     }
 
-    button {
+    &__room-desktop {
+        display: none;
+    }
+
+    &__book-now-mobile {
         @include principal.button-style(#BDAC8D);
         border: none;
         margin-left: 4%;
+    }
+
+    &__book-now-desktop {
+        display: none;
     }
 
     &__room-img {
@@ -114,18 +122,23 @@
 @media only screen and (min-width: 1000px) {
     .offers-deals {
         width: 70%;
+        box-shadow: unset;
+        max-width: 1170px;
 
         &__room {
             display: none;
         }
 
         &__room-img {
+            width: 100%;
             display: inline-block;
-            height: 570px;
+            height: 450px;
             object-fit: cover;
         }
 
         &__room-description {
+            position: relative;
+            transform: translateY(-15%);
             width: 90%;
             margin: 0 auto;
             background-color: #FFFFFF;
@@ -146,6 +159,10 @@
             }
         }
 
+        &__room-desktop {
+            display: block;
+        }
+
         &__price {
             text-align: right;
         }
@@ -156,6 +173,30 @@
             margin: 0 auto;
             margin-bottom: 35px;
             border: 1px solid #F1F1F1;
+        }
+
+        &__amenities {
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &__book-now-mobile {
+            display: none;
+        }
+
+        &__description {
+            margin: unset;
+            margin-bottom: 20px;
+        }
+
+        &__book-now-desktop {
+            @include principal.button-style(#BDAC8D);
+            border: none;
+        }
+
+        &__left-amenities {
+            width: 60%;
         }
     }
 }

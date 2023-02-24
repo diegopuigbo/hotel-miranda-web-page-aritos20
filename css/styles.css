@@ -1372,6 +1372,9 @@
 .about-us-facilities__pagination {
   --swiper-pagination-color: var(--gold);
 }
+.about-us-facilities__big-container {
+  display: none;
+}
 
 @media only screen and (min-width: 1000px) {
   .about-us-facilities h6 {
@@ -1579,18 +1582,18 @@
   font-weight: 400;
   color: var(--secondary-background);
 }
-.rooms-slider__description-price__price-booking {
+.rooms-slider__price-booking {
   display: flex;
   justify-content: center;
   gap: 19px;
 }
-.rooms-slider__description-price__price-booking p:nth-child(1) {
+.rooms-slider__price-booking p:nth-child(1) {
   font-family: var(--font-archivo);
   font-size: 16px;
   font-weight: 700;
   color: var(--gold);
 }
-.rooms-slider__description-price__price-booking p:nth-child(2) {
+.rooms-slider__price-booking p:nth-child(2) {
   font-family: var(--font-archivo);
   font-size: 16px;
   font-weight: 700;
@@ -1819,7 +1822,10 @@
 .offers-deals__list img {
   margin-right: 8px;
 }
-.offers-deals button {
+.offers-deals__room-desktop {
+  display: none;
+}
+.offers-deals__book-now-mobile {
   display: block;
   width: 217px;
   height: 60px;
@@ -1833,6 +1839,9 @@
   border: none;
   margin-left: 4%;
 }
+.offers-deals__book-now-desktop {
+  display: none;
+}
 .offers-deals__room-img {
   display: none;
 }
@@ -1840,16 +1849,21 @@
 @media only screen and (min-width: 1000px) {
   .offers-deals {
     width: 70%;
+    box-shadow: unset;
+    max-width: 1170px;
   }
   .offers-deals__room {
     display: none;
   }
   .offers-deals__room-img {
+    width: 100%;
     display: inline-block;
-    height: 570px;
+    height: 450px;
     object-fit: cover;
   }
   .offers-deals__room-description {
+    position: relative;
+    transform: translateY(-15%);
     width: 90%;
     margin: 0 auto;
     background-color: #FFFFFF;
@@ -1867,6 +1881,9 @@
     width: unset;
     margin-left: unset;
   }
+  .offers-deals__room-desktop {
+    display: block;
+  }
   .offers-deals__price {
     text-align: right;
   }
@@ -1876,6 +1893,34 @@
     margin: 0 auto;
     margin-bottom: 35px;
     border: 1px solid #F1F1F1;
+  }
+  .offers-deals__amenities {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .offers-deals__book-now-mobile {
+    display: none;
+  }
+  .offers-deals__description {
+    margin: unset;
+    margin-bottom: 20px;
+  }
+  .offers-deals__book-now-desktop {
+    display: block;
+    width: 217px;
+    height: 60px;
+    background-color: #BDAC8D;
+    font-family: var(--font-archivo);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: var(--white-text);
+    cursor: pointer;
+    border: none;
+  }
+  .offers-deals__left-amenities {
+    width: 60%;
   }
 }
 .offers-popular {
